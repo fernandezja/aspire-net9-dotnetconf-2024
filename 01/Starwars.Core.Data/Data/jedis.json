@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Luke Skywalker",
+    "side": "Light",
+    "age": 53,
+    "species": "Human",
+    "homeworld": "Tatooine",
+    "lightsaberColor": "Green",
+    "imageUrl": "https://starwars-visualguide.com/assets/img/characters/1.jpg"
+  },
+  {
+    "name": "Yoda",
+    "side": "Light",
+    "age": 900,
+    "species": "Unknown",
+    "homeworld": "Unknown",
+    "lightsaberColor": "Green",
+    "imageUrl": "https://starwars-visualguide.com/assets/img/characters/20.jpg"
+  },
+  {
+    "name": "Obi-Wan Kenobi",
+    "side": "Light",
+    "age": 57,
+    "species": "Human",
+    "homeworld": "Stewjon",
+    "lightsaberColor": "Blue",
+    "imageUrl": "https://starwars-visualguide.com/assets/img/characters/10.jpg"
+  },
+  {
+    "name": "Anakin Skywalker",
+    "side": "Light (before turning to the Dark side)",
+    "age": 45,
+    "species": "Human",
+    "homeworld": "Tatooine",
+    "lightsaberColor": "Blue",
+    "imageUrl": "https://starwars-visualguide.com/assets/img/characters/11.jpg"
+  },
+  {
+    "name": "Mace Windu",
+    "side": "Light",
+    "age": 53,
+    "species": "Human",
+    "homeworld": "Haruun Kal",
+    "lightsaberColor": "Purple",
+    "imageUrl": "https://starwars-visualguide.com/assets/img/characters/51.jpg"
+  },
+  {
+    "name": "Qui-Gon Jinn",
+    "side": "Light",
+    "age": 60,
+    "species": "Human",
+    "homeworld": "Coruscant",
+    "lightsaberColor": "Green",
+    "imageUrl": "https://starwars-visualguide.com/assets/img/characters/32.jpg"
+  },
+  {
+    "name": "Rey Skywalker",
+    "side": "Light",
+    "age": 22,
+    "species": "Human",
+    "homeworld": "Jakku",
+    "lightsaberColor": "Yellow",
+    "imageUrl": "https://starwars-visualguide.com/assets/img/characters/85.jpg"
+  }
+]

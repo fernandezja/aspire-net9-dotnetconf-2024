@@ -1,0 +1,54 @@
+﻿@page "/jedisSearch"
+@inject JediService _jediService
+@attribute [StreamRendering]
+
+<PageTitle>Jedis</PageTitle>
+
+<h1>Jedis</h1>
+
+<p>This component demonstrates showing data.</p>
+
+@if (_jedis is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="row">
+            @foreach (var jedi in _jedis)
+            {
+                <div class="card" style="width: 18rem;">
+                    <img src="@jedi.ImageUrl" class="card-img-top" alt="@jedi.Name">
+                    <div class="card-body">
+                        <h5 class="card-title">@jedi.Name</h5>
+                        <p class="card-text">
+                            <ul>
+                                <li>Side: @jedi.Side</li>
+                                <li>Age: @jedi.Age</li>
+                                <li>Species: @jedi.Species</li>
+                                <li>Homeworld: @jedi.Homeworld</li>
+                                <li>lightsaber color: @jedi.LightsaberColor</li>
+                            </ul>
+                        </p>
+                       
+                    </div>
+                </div>
+            }
+    </div>
+   
+}
+
+@code {
+    private List<Jedi>? _jedis;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Simulate asynchronous loading to demonstrate streaming rendering
+        await Task.Delay(500);
+
+        _jedis = await _jediService.GetAllAsync();
+
+    }
+
+    
+}

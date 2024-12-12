@@ -1,0 +1,16 @@
+###
+# Use .http files in Visual Studio 2022
+# https://learn.microsoft.com/en-us/aspnet/core/test/http-files
+###
+@Starwars.Api_HostAddress = http://localhost:5175
+
+GET {{Starwars.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+###
+
+
+GET {{Starwars.Api_HostAddress}}/api/jedi
+Accept: application/json
+###
+
+
